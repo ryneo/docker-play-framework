@@ -8,7 +8,7 @@ RUN mkdir /home/activator \
   && wget http://downloads.typesafe.com/typesafe-activator/${ACTIVATOR_VERSION}/typesafe-activator-${ACTIVATOR_VERSION}.zip \
   && unzip -d /home/activator typesafe-activator-${ACTIVATOR_VERSION}.zip \
   && rm typesafe-activator-${ACTIVATOR_VERSION}.zip \
-  && cd /home/dev/activator-dist-${ACTIVATOR_VERSION} \
+  && cd /home/activator/activator-dist-${ACTIVATOR_VERSION} \
   && chmod 755 activator activator-launch-${ACTIVATOR_VERSION}.jar
 
 ENV PATH=$PATH:/home/activator/activator-dist-${ACTIVATOR_VERSION}
